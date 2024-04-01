@@ -8,25 +8,19 @@ const props = defineProps({
 
 <template>
   <div class="card">
-    <div class="icon">
-      <img :src="`../src/assets/icons/${props.icon}.svg`" :alt="props.title" />
-    </div>
+    <slot name="emoji"></slot>
     <h3>{{ props.title }}</h3>
     <p>{{ props.description }}</p>
   </div>
 </template>
 
-<style lang="scss">
+<style scoped lang="scss">
 .card {
   background-color: #fff;
   border-radius: 4px;
   padding: 40px;
-  text-align: center;
-  box-shadow: none  ;
-  .icon {
-    font-size: 35px;
-    margin-bottom: 16px;
-  }
+  min-height: 285px;
+  margin-bottom: 1.5rem;
   h3 {
     margin-bottom: 16px;
     font-size: 20px;

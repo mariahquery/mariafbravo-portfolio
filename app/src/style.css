@@ -1,42 +1,52 @@
 @font-face {
-    font-family: 'Hind Siliguri Regular';
-    src: url('./assets/fonts/Hind_Siliguri/HindSiliguri-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "Hind Siliguri Regular";
+  src: url("./assets/fonts/Hind_Siliguri/HindSiliguri-Regular.ttf")
+    format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'Hind Siliguri Medium';
-    src: url('./assets/fonts/Hind_Siliguri/HindSiliguri-Medium.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "Hind Siliguri Medium";
+  src: url("./assets/fonts/Hind_Siliguri/HindSiliguri-Medium.ttf")
+    format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'Hind Siliguri SemiBold';
-    src: url('./assets/fonts/Hind_Siliguri/HindSiliguri-SemiBold.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "Hind Siliguri SemiBold";
+  src: url("./assets/fonts/Hind_Siliguri/HindSiliguri-SemiBold.ttf")
+    format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'Hind Siliguri Bold';
-    src: url('./assets/fonts/Hind_Siliguri/HindSiliguri-Bold.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "Hind Siliguri Bold";
+  src: url("./assets/fonts/Hind_Siliguri/HindSiliguri-Bold.ttf")
+    format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 
 body {
-    font-family: 'Hind Siliguri Regular', sans-serif;
-    font-size: 16px;
-    line-height: 1.6;
-    color: #292830;
-    background-color: #f4f4f4;
-    margin: 0;
-    padding: 0;
-
+  font-family: "Hind Siliguri Regular", sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #292830;
+  margin: 0;
+  padding: 0;
 }
 
 a {
-    color: #343841;
+   color: #343841;
+}
+
+.bg-white {
+  background-color: #fff;
+}
+
+.bg-gray {
+  background-color: #f6f6f6;
 }

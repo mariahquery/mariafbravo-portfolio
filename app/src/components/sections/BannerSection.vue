@@ -1,9 +1,5 @@
-<script setup>
-import Card from "../Card.vue";
-</script>
-
 <template>
-  <section class="hero is-small">
+  <section class="hero is-small bg-gray banner">
     <div class="hero-body">
       <div class="container">
         <div class="main-banner columns">
@@ -26,6 +22,7 @@ import Card from "../Card.vue";
           <div class="column">
             <div>
               <img
+                class="banner-image"
                 src="../../assets/banner-image-base.svg"
                 alt="Banner image"
               />
@@ -37,7 +34,7 @@ import Card from "../Card.vue";
           <div class="column">
             <div class="banner-service-item">
               <div class="wrapper">
-                <img src="../../assets/icons/rocket.svg" alt="Rocket icon" />
+               📱
               </div>
               <h3 class="banner-service-title">Responsive Websites</h3>
             </div>
@@ -45,7 +42,7 @@ import Card from "../Card.vue";
           <div class="column">
             <div class="banner-service-item">
               <div class="wrapper">
-                <img src="../../assets/icons/rocket.svg" alt="Rocket icon" />
+                🛠️
               </div>
               <h3 class="banner-service-title">CMS solutions with Webflow</h3>
             </div>
@@ -53,7 +50,7 @@ import Card from "../Card.vue";
           <div class="column">
             <div class="banner-service-item">
               <div class="wrapper">
-                <img src="../../assets/icons/rocket.svg" alt="Rocket icon" />
+                🚀
               </div>
               <h3 class="banner-service-title">Web Performance and SEO</h3>
             </div>
@@ -64,7 +61,10 @@ import Card from "../Card.vue";
   </section>
 </template>
 
-<style lang="scss">
+<style scoped lang="scss">
+section {
+  padding: 1rem 0 !important;
+}
 .title {
   font-size: 59px;
   font-family: "Hind Siliguri Bold", sans-serif;
@@ -72,6 +72,7 @@ import Card from "../Card.vue";
 }
 .subtitle {
   font-size: 59px;
+  line-height: 1.2;
   font-family: "Hind Siliguri Bold", sans-serif;
   color: #343841;
 }
@@ -101,6 +102,9 @@ import Card from "../Card.vue";
     align-items: center;
     padding: 17px;
     margin-bottom: 1.5rem;
+    font-size: 35px;
+    width: 80px;
+    height: 80px;
   }
 }
 .services {
@@ -147,5 +151,24 @@ import Card from "../Card.vue";
 }
 .title:not(.is-spaced) + .subtitle {
   margin-top: 0;
+}
+
+@media screen and (max-width: 769px) {
+  .subtitle,
+  .title {
+    font-size: 44px;
+  }
+  .banner-image {
+    margin-top: 0;
+  }
+  .main-banner {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 0;
+  }
+  .banner-service-item {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
 }
 </style>
