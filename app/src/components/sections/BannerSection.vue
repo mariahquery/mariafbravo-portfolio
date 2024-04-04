@@ -5,17 +5,20 @@
         <div class="main-banner columns">
           <div class="column">
             <div class="banner-content-wrapper">
+              <img
+                class="design-element"
+                src="../../assets/design-element.svg"
+                alt="Design Element Maria Bravo"
+              />
               <h1 class="title">Hi, I’m Maria:</h1>
               <h2 class="subtitle">
                 I design and build digital products for the<br />
                 ideal user experience
               </h2>
-              <button class="button is-rounded worktogether">
-                <strong>Let’s work together!</strong>
-                <img
-                  src="../../assets/icons/arrow-right.svg"
-                  alt="Arrow right"
-                />
+              <button
+                class="button-special button--wayra button--border-thick button--size-l"
+              >
+                Let's Get In Touch!
               </button>
             </div>
           </div>
@@ -33,25 +36,19 @@
         <div class="services columns">
           <div class="column">
             <div class="banner-service-item">
-              <div class="wrapper">
-               📱
-              </div>
+              <div class="wrapper">📱</div>
               <h3 class="banner-service-title">Responsive Websites</h3>
             </div>
           </div>
           <div class="column">
             <div class="banner-service-item">
-              <div class="wrapper">
-                🛠️
-              </div>
+              <div class="wrapper">🛠️</div>
               <h3 class="banner-service-title">CMS solutions with Webflow</h3>
             </div>
           </div>
           <div class="column">
             <div class="banner-service-item">
-              <div class="wrapper">
-                🚀
-              </div>
+              <div class="wrapper">🚀</div>
               <h3 class="banner-service-title">Web Performance and SEO</h3>
             </div>
           </div>
@@ -75,9 +72,15 @@ section {
   line-height: 1.2;
   font-family: "Hind Siliguri Bold", sans-serif;
   color: #343841;
+  margin-bottom: 3rem;
 }
 .main-banner {
   margin-top: 3rem;
+}
+.design-element {
+  position: absolute;
+  top: 76%;
+  left: 20%;
 }
 .banner-service-title {
   font-size: 20px;
@@ -112,19 +115,22 @@ section {
   margin-bottom: 3rem;
   .column:nth-child(1) {
     .wrapper {
-      background-color: #ffc701;
+      background-color: #fff;
+      border: 5px solid #33efab;
     }
   }
   .column:nth-child(2) {
     border-left: 1px solid #c9c9c9;
     border-right: 1px solid #c9c9c9;
     .wrapper {
-      background-color: #3b1df4;
+      background-color: #fff;
+      border: 5px solid #3b1df4;
     }
   }
   .column:nth-child(3) {
     .wrapper {
-      background-color: #33efab;
+      background-color: #fff;
+      border: 5px solid #fec704;
     }
   }
 }
@@ -147,6 +153,7 @@ section {
   }
 }
 .banner-content-wrapper {
+  position: relative;
   margin-top: 0.5rem;
 }
 .title:not(.is-spaced) + .subtitle {

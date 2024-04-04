@@ -28,12 +28,12 @@ import Card from "../Card.vue";
 
       <div class="columns">
         <div class="column">
-          <h1 class="title has-text-centered">Services</h1>
+          <h1 class="title">Services</h1>
         </div>
       </div>
 
       <div class="columns">
-        <div class="columns mt-6">
+        <div class="columns">
           <div class="column">
             <Card
               title="Website Development"
@@ -100,7 +100,7 @@ import Card from "../Card.vue";
 
 <style scoped lang="scss">
 .services.title {
-  font-size: 69px;
+  font-size: 48px;
   font-family: "Hind Siliguri Bold", sans-serif;
   color: #292830;
   margin-top: 60px;
@@ -109,16 +109,14 @@ import Card from "../Card.vue";
   font-family: "Hind Siliguri SemiBold", sans-serif;
   font-size: 21px;
   margin-top: 30px;
-  margin-bottom: 10px;
+  margin-bottom: 130px;
 }
 .title {
-  font-size: 48px;
+  font-size: 36px;
   font-family: "Hind Siliguri Bold", sans-serif;
   margin: 2rem 0;
 }
-.main-color {
-  color: #33efab;
-}
+
 .emoji {
   font-size: 30px;
 }

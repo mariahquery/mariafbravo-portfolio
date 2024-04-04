@@ -1,6 +1,6 @@
 <template>
   <section class="contact">
-    <div class="container-fluid">
+    <div class="container-fluid pr">
       <div class="container">
         <div class="columns">
           <div class="column pr">
@@ -23,8 +23,34 @@
             >
             </iframe>
           </div>
+          <div class="column">
+            <img src="../../assets/mail.svg" alt="mail" />
+            <ul class="info">
+              <li>
+                <div>📱</div>
+                <a href="tel:+351918024057">+351 91 802 40 57</a>
+              </li>
+              <li>
+                <div>✉️</div>
+                <a href="mailto:front.end.maria@gmail.com"
+                  >front.end.maria@gmail.com</a
+                >
+              </li>
+              <li>
+                <div>👩🏼‍💻</div>
+                <a href="https://www.linkedin.com/in/mariafbravo/"
+                  >https://www.linkedin.com/in/mariafbravo/</a
+                >
+              </li>
+              <li>
+                <div>📌</div>
+                <p>Full Remote - currently in Portugal</p>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
+      <img class="element" src="../../assets/contact-element.svg" alt="Contact background" />
     </div>
   </section>
 </template>
@@ -32,18 +58,38 @@
 <style scoped lang="scss">
 section {
   padding-top: 90px;
-  background-color: #191919;
 }
 .pr {
   position: relative;
+}
+.element {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
 }
 .hide-jotform-logo {
   position: absolute;
   content: "";
   width: 100%;
   height: 59px;
-  background-color: #191919;
+  background-color: #fff;
   z-index: 1000000;
   bottom: 20px;
+}
+.info {
+  margin: 2.5rem 3rem;
+
+  li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    a, p {
+      font-family: 'Hind Siliguri SemiBold', sans-serif;
+    }
+    div{
+      margin-right: 1rem;
+    }
+  }
 }
 </style>

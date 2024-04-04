@@ -13,10 +13,18 @@
               I designed and developed this website as a showcase of my skills,
               and I invite you to explore my code on my GitHub repository.
             </p>
-            <button class="button is-rounded github">
-              <strong>View on my GitHub</strong>
-              <img src="../../assets/icons/arrow-right.svg" alt="Arrow right" />
-            </button>
+            <a
+              href="https://github.com/mariahquery/mariafbravo-portfolio"
+              target="_blank"
+            >
+              <button class="button is-rounded github">
+                <strong>View on my GitHub</strong>
+                <img
+                  src="../../assets/icons/arrow-right.svg"
+                  alt="Arrow right"
+                />
+              </button>
+            </a>
           </div>
           <div class="column pr">
             <img
@@ -41,6 +49,9 @@
   background-color: transparent;
   border: 1px solid #33efab;
   margin-top: 2rem;
+  padding: 1.5rem;
+  border-radius: 15px;
+  font-size: 21px;
   img {
     margin-left: 1rem;
   }

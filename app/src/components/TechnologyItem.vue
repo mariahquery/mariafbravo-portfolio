@@ -3,14 +3,16 @@ const props = defineProps({
   icon: String,
   title: String,
 });
+
+function getImageUrl() {
+  return new URL(`../assets/icons/${props.icon}.svg`, import.meta.url)
+}
+
 </script>
 
 <template>
   <div class="wrapper">
-    <img
-      :src="`./src/assets/icons/${props.icon}.svg`"
-      :alt="`${props.title}`"
-    />
+    <img :src="getImageUrl()" :alt="`${props.title}`" />
     <h5>{{ props.title }}</h5>
   </div>
 </template>
