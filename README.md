@@ -1,2 +1,0 @@
-# mariafbravo-portfolio
-

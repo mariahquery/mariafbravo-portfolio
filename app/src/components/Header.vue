@@ -25,7 +25,7 @@ const triggerMenuItem = () => {
     >
       <div class="container">
         <div class="navbar-brand">
-          <a class="navbar-item" href="#banner">
+          <a class="navbar-item" href="#">
             <img
               class="mt-2 mb-2 logo"
               src="../assets/maria-bravo-logo.svg"
