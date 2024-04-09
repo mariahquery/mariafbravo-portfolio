@@ -311,4 +311,13 @@ figure.effect-sadie:hover p {
   .button--size-l {
     font-size: 18px;
   }
+  figure.effect-sadie p {
+    bottom: 0;
+  }
+  figure.effect-sadie h2 {
+    top: 35%;
+  }
+  .grid figure p {
+    font-size: 15px;
+}
 }
