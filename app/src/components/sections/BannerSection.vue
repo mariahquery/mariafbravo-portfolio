@@ -1,5 +1,5 @@
 <template>
-  <section class="hero is-small bg-gray banner">
+  <section id="#home" class="hero is-small bg-gray banner">
     <div class="hero-body">
       <div class="container">
         <div class="main-banner columns">
@@ -15,11 +15,13 @@
                 I design and build digital products for the<br />
                 ideal user experience
               </h2>
-              <button
-                class="button-special button--wayra button--border-thick button--size-l"
-              >
-                Let's Get In Touch!
-              </button>
+              <a href="#contact-me">
+                <button
+                  class="button-special button--wayra button--border-thick button--size-l"
+                >
+                  Let's Get In Touch!
+                </button>
+              </a>
             </div>
           </div>
           <div class="column">
@@ -62,6 +64,7 @@
 section {
   padding: 1rem 0 !important;
 }
+
 .title {
   font-size: 59px;
   font-family: "Hind Siliguri Bold", sans-serif;
@@ -75,9 +78,10 @@ section {
   margin-bottom: 3rem;
 }
 .main-banner {
-  margin-top: 3rem;
+  margin-top: 8rem;
 }
 .design-element {
+  display: none;
   position: absolute;
   top: 76%;
   left: 20%;
@@ -112,7 +116,6 @@ section {
 }
 .services {
   margin-top: 2rem;
-  margin-bottom: 3rem;
   .column:nth-child(1) {
     .wrapper {
       background-color: #fff;
@@ -171,11 +174,23 @@ section {
   .main-banner {
     display: flex;
     flex-direction: column-reverse;
-    margin-top: 0;
+    margin-top: 7rem;
+  }
+  .title {
+    margin-top: 3rem;
   }
   .banner-service-item {
     margin-top: 2rem;
     margin-bottom: 2rem;
+  }
+  .design-element {
+    top: 77%;
+    left: 17%;
+    width: 58%;
+  }
+  .services .column[data-v-5fa86a66]:nth-child(2) {
+    border-left: none;
+    border-right: none;
   }
 }
 </style>

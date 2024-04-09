@@ -1,9 +1,9 @@
 <template>
-  <section class="contact">
+  <section id="contact-me">
     <div class="container-fluid pr">
       <div class="container">
         <div class="columns">
-          <div class="column pr">
+          <div class="column column-form pr">
             <div class="hide-jotform-logo"></div>
             <iframe
               id="JotFormIFrame-240914489940364"
@@ -23,13 +23,9 @@
             >
             </iframe>
           </div>
-          <div class="column">
+          <div class="column column-mail">
             <img src="../../assets/mail.svg" alt="mail" />
             <ul class="info">
-              <li>
-                <div>📱</div>
-                <a href="tel:+351918024057">+351 91 802 40 57</a>
-              </li>
               <li>
                 <div>✉️</div>
                 <a href="mailto:front.end.maria@gmail.com"
@@ -50,7 +46,11 @@
           </div>
         </div>
       </div>
-      <img class="element" src="../../assets/contact-element.svg" alt="Contact background" />
+      <img
+        class="element"
+        src="../../assets/contact-element.svg"
+        alt="Contact background"
+      />
     </div>
   </section>
 </template>
@@ -84,12 +84,24 @@ section {
     display: flex;
     align-items: center;
     margin-bottom: 1rem;
-    a, p {
-      font-family: 'Hind Siliguri SemiBold', sans-serif;
+    a,
+    p {
+      font-family: "Hind Siliguri SemiBold", sans-serif;
     }
-    div{
+    div {
       margin-right: 1rem;
     }
+  }
+}
+@media screen and (max-width: 769px) {
+  .info {
+    margin: 3rem 7rem 10rem 7rem;
+  }
+  .column-mail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -7rem;
   }
 }
 </style>

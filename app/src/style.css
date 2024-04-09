@@ -39,6 +39,11 @@ body {
   padding: 0;
 }
 
+.main {
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+
 a {
   color: #343841;
 }
@@ -210,7 +215,7 @@ figure.effect-sadie p {
   transform: translate3d(0, 10px, 0);
   text-transform: none;
   color: #fff;
-  font-family: 'Hind Siliguri Regular', sans-serif;
+  font-family: "Hind Siliguri Regular", sans-serif;
 }
 
 figure.effect-sadie p a {
@@ -297,8 +302,13 @@ figure.effect-sadie:hover p {
 }
 
 .grid figure p {
-  letter-spacing: 1px;
   font-size: 16px;
 }
 
 /* Individual effects */
+
+@media screen and (max-width: 769px) {
+  .button--size-l {
+    font-size: 18px;
+  }
+}

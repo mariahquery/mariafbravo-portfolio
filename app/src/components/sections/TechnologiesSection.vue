@@ -3,8 +3,46 @@ import TechnologyItem from "../TechnologyItem.vue";
 </script>
 
 <template>
-  <section class="container-fluid bg">
-    <div class="container technologies">
+  <section id="technologies" class="bg">
+    <div class="container">
+      <div class="columns">
+        <div class="column">
+          <h1 class="title has-text-centered">Technologies</h1>
+        </div>
+      </div>
+      <div class="columns">
+      <div class="column is-one-quarter-fullhd">
+        <TechnologyItem title="Vue.js" icon="vue" />
+      </div>
+      <div class="column is-one-quarter-fullhd">
+        <TechnologyItem title="Javascript" icon="javascript" />
+      </div>
+      <div class="column is-one-quarter-fullhd">
+        <TechnologyItem title="HTML5" icon="html5" />
+      </div>
+      <div class="column is-one-quarter-fullhd">
+        <TechnologyItem title="SCSS" icon="sass" />
+      </div>
+    </div>
+    <div class="columns">
+      <div class="column is-one-quarter-fullhd">
+        <TechnologyItem title="Typescript" icon="typescript" />
+      </div>
+      <div class="column is-one-quarter-fullhd">
+        <TechnologyItem title="CSS3" icon="css3" />
+      </div>
+      <div class="column is-one-quarter-fullhd">
+        <TechnologyItem title="Webflow" icon="webflow" />
+      </div>
+      <div class="column is-one-quarter-fullhd">
+        <TechnologyItem title="Figma" icon="figma" />
+      </div>
+    </div>
+    </div>
+   
+  </section>
+  <!-- <section id="technologies" class="container-fluid bg">
+    <div class="container">
       <div class="columns">
         <div class="column">
           <h1 class="title has-text-centered">Technologies</h1>
@@ -39,7 +77,7 @@ import TechnologyItem from "../TechnologyItem.vue";
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
 </template>
 
 <style scoped lang="scss">
