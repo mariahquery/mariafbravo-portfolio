@@ -2,6 +2,7 @@
   <section class="banner-small">
     <div class="container-fluid bg">
       <div class="container">
+        <div class="column">
           <div class="wrapper">
             <h6 class="banner-title">
               Need a brand new website?<br />
@@ -15,6 +16,7 @@
               </button>
             </a>
           </div>
+        </div>
       </div>
     </div>
   </section>

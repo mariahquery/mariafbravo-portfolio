@@ -32,4 +32,19 @@ const props = defineProps({
     font-size: 16px;
   }
 }
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .card h3 {
+    font-size: 17px;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .card {
+    margin: 0 0.75rem;
+    h3 {
+      font-size: 17px;
+    }
+  }
+}
 </style>

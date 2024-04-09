@@ -166,7 +166,7 @@ section {
 @media screen and (max-width: 769px) {
   .subtitle,
   .title {
-    font-size: 44px;
+    font-size: 43px;
   }
   .banner-image {
     margin-top: 0;
@@ -182,6 +182,9 @@ section {
   .banner-service-item {
     margin-top: 2rem;
     margin-bottom: 2rem;
+  }
+  .banner-service-title {
+    font-size: 17px;
   }
   .design-element {
     top: 77%;

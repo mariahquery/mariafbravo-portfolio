@@ -26,16 +26,23 @@
 </template>
 
 <style scoped lang="scss">
-
 .description {
   font-family: "Hind Siliguri SemiBold", sans-serif;
   font-size: 21px;
   margin-top: 30px;
-  margin-bottom: 130px;
 }
 .title {
   font-size: 58px;
   font-family: "Hind Siliguri Bold", sans-serif;
   margin: 2rem 0;
+}
+
+@media screen and (max-width: 769px) {
+  .title {
+    font-size: 40px;
+  }
+  .description {
+    font-size: 18px;
+  }
 }
 </style>

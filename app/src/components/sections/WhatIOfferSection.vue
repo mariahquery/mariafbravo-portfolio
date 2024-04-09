@@ -2,9 +2,8 @@
 
 <template>
   <section class="container what-i-can-offer-you">
-
     <div class="columns row">
-      <div class="column is-two-fifths">
+      <div class="column is-two-fifths is-flex">
         <img src="../../assets/building-websites.svg" />
       </div>
       <div class="column is-one-fifth"></div>
@@ -13,15 +12,16 @@
           <h4 class="item-title">Responsive Websites from Vision to Life</h4>
           <p class="item-subtitle">
             From innovative design to robust code, creating a website that
-            perfectly suits your vision. From custom-built websites to small e-commerce platforms, 
-            we deliver a seamless experience that captivates your audience.
+            perfectly suits your vision. From custom-built websites to small
+            e-commerce platforms, we deliver a seamless experience that
+            captivates your audience.
           </p>
         </div>
       </div>
     </div>
 
     <div class="columns row">
-      <div class="column">
+      <div class="column is-flex-center-tablet">
         <div class="wrapper">
           <h4 class="item-title">Manage Your Website Content Easily</h4>
           <p class="item-subtitle">
@@ -32,13 +32,13 @@
         </div>
       </div>
       <div class="column is-one-fifth"></div>
-      <div class="column is-two-fifths">
+      <div class="column is-two-fifths is-flex-center-tablet">
         <img src="../../assets/editing.svg" />
       </div>
     </div>
 
     <div class="columns row">
-      <div class="column is-two-fifths">
+      <div class="column is-two-fifths is-flex">
         <img src="../../assets/dashboards.svg" />
       </div>
       <div class="column is-one-fifth"></div>
@@ -53,13 +53,10 @@
         </div>
       </div>
     </div>
-
-   
   </section>
 </template>
 
 <style scoped lang="scss">
-
 .row {
   margin: 100px 0;
 }
@@ -87,6 +84,34 @@
     color: #292830;
     line-height: 24px;
     font-family: "Hind Siliguri Regular", sans-serif;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .is-flex-center-tablet {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .wrapper {
+    padding: 20px 0;
+    .item-title {
+      font-size: 36px;
+      line-height: 36px;
+    }
+    .item-subtitle {
+      font-size: 16px;
+      line-height: 22px;
+    }
+  }
+  .row {
+    margin: 20px 0;
+  }
+  .columns:nth-child(2) {
+    display: flex;
+    flex-direction: column-reverse;
   }
 }
 </style>
