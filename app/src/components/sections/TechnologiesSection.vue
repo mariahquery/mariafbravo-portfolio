@@ -54,4 +54,10 @@ section {
 .bg {
   background-color: #f6f6f6;
 }
+
+@media screen and (max-width: 769px){
+  section {
+    padding: 40px 0;
+  }
+}
 </style>

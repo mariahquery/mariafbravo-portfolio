@@ -8,17 +8,13 @@
           >
         </h4>
         <p class="description">
-          Hello, I’m Maria, a passionate designer and developer with over 8
-          years experience. I’ve worked for creative agencies, business AI
-          companies, and a variety of individual clients.
-
+          Hello!! My name is Maria and I'm passionate developer with design skills with over 8
+          years experience. I love giving life to digital user experiences!
           <br /><br />
-
-          Whether it's a website, an app, or a complex software system, I bring
-          a balanced perspective that integrates the best of both worlds –
-          design and development. My goal is to create digital experiences that
-          not only look beautiful but also function flawlessly, making every
-          interaction enjoyable and memorable.
+          I’ve worked for a creative agency, a business analytics boutique and a variety of individual clients.
+          I have experience in designing and developing websites, web apps, and mobile apps for a variety of clients. I have worked in industries like Retail, Logistics, Recruitment and Healthcare. 
+          <br /><br />
+          My goal is to create digital experiences that not only look beautiful but also function flawlessly, making every interaction enjoyable and memorable.
         </p>
       </div>
     </div>
@@ -34,7 +30,7 @@
 .title {
   font-size: 58px;
   font-family: "Hind Siliguri Bold", sans-serif;
-  margin: 2rem 0;
+  margin: 5rem 0 3rem 0;
 }
 
 @media screen and (max-width: 769px) {

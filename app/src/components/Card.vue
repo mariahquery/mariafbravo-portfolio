@@ -19,7 +19,7 @@ const props = defineProps({
   background-color: #fff;
   border-radius: 4px;
   padding: 40px;
-  min-height: 285px;
+  min-height: 270px;
   margin-bottom: 1.5rem;
   h3 {
     margin-bottom: 16px;

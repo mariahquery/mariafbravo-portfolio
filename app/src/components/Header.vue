@@ -39,7 +39,8 @@ const triggerMenuItem = () => {
             aria-label="menu"
             aria-expanded="false"
             data-target="navbarBasicExample"
-            @click="showNav = !showNav" :class="{ 'is-active': showNav }"
+            @click="showNav = !showNav"
+            :class="{ 'is-active': showNav }"
           >
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
@@ -77,12 +78,20 @@ const triggerMenuItem = () => {
 </template>
 
 <style scoped lang="scss">
+.navbar {
+  z-index: 2000000;
+}
 .navbar-item img {
   max-height: unset;
 }
 .buttons {
   display: flex;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   align-items: center;
+  -webkit-align-items: center;
   a {
     margin: 0.5rem;
     padding: 0.5rem;
@@ -99,8 +108,13 @@ header {
   font-weight: bold;
   font-family: "Source Sans Pro", sans-serif;
   display: flex;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   padding: 0.5rem 1rem !important;
   align-items: normal;
+  -webkit-align-items: normal;
   cursor: pointer;
   font-size: 15px;
   img {
@@ -128,12 +142,22 @@ header {
 @media screen and (max-width: 769px) {
   .navbar-burger {
     display: flex;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     align-self: center;
   }
   .buttons {
     display: block;
     display: flex;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     flex-direction: column;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
   }
 }
 </style>

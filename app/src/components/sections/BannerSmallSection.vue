@@ -24,7 +24,7 @@
 
 <style scoped lang="scss">
 .banner-title {
-  font-size: 50px;
+  font-size: 45px;
   font-family: "Hind Siliguri Bold", sans-serif;
   color: #292830;
   line-height: 1.2;
@@ -40,7 +40,7 @@
 }
 @media screen and (max-width: 769px) {
   .banner-title {
-    font-size: 36px;
+    font-size: 30px;
   }
   .banner-padding {
     padding: 35px 0 90px 0;

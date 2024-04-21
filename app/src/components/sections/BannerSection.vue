@@ -6,15 +6,10 @@
           <div class="column">
             <div class="banner-content-wrapper">
               <img
-                class="design-element"
-                src="../../assets/design-element.svg"
-                alt="Design Element Maria Bravo"
+                class="banner-text"
+                src="../../assets/banner-text.svg"
+                alt="Banner text"
               />
-              <h1 class="title">Hi, I’m Maria:</h1>
-              <h2 class="subtitle">
-                I design and build digital products for the<br />
-                ideal user experience
-              </h2>
               <a href="#contact-me">
                 <button
                   class="button-special button--wayra button--border-thick button--size-l"
@@ -65,26 +60,12 @@ section {
   padding: 1rem 0 !important;
 }
 
-.title {
-  font-size: 59px;
-  font-family: "Hind Siliguri Bold", sans-serif;
-  color: #33efab;
-}
-.subtitle {
-  font-size: 59px;
-  line-height: 1.2;
-  font-family: "Hind Siliguri Bold", sans-serif;
-  color: #343841;
+.banner-text {
   margin-bottom: 3rem;
 }
+
 .main-banner {
   margin-top: 8rem;
-}
-.design-element {
-  display: none;
-  position: absolute;
-  top: 76%;
-  left: 20%;
 }
 .banner-service-title {
   font-size: 20px;
@@ -96,8 +77,15 @@ section {
 }
 .banner-service-item {
   display: flex;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   flex-direction: column;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
   align-items: center;
+  -webkit-align-items: center;
   margin-top: 3rem;
   margin-bottom: 3rem;
 
@@ -105,8 +93,14 @@ section {
     background-color: #33efab;
     border-radius: 100%;
     display: flex;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     justify-content: center;
+    -webkit-justify-content: center;
     align-items: center;
+    -webkit-align-items: center;
     padding: 17px;
     margin-bottom: 1.5rem;
     font-size: 35px;
@@ -118,7 +112,7 @@ section {
   margin-top: 2rem;
   .column:nth-child(1) {
     .wrapper {
-      background-color: #fff;
+      background-color: #F6F6F6;
       border: 5px solid #33efab;
     }
   }
@@ -126,13 +120,13 @@ section {
     border-left: 1px solid #c9c9c9;
     border-right: 1px solid #c9c9c9;
     .wrapper {
-      background-color: #fff;
+      background-color: #F6F6F6;
       border: 5px solid #3b1df4;
     }
   }
   .column:nth-child(3) {
     .wrapper {
-      background-color: #fff;
+      background-color: #F6F6F6;
       border: 5px solid #fec704;
     }
   }
@@ -156,7 +150,6 @@ section {
   }
 }
 .banner-content-wrapper {
-  position: relative;
   margin-top: 0.5rem;
 }
 .title:not(.is-spaced) + .subtitle {
@@ -166,13 +159,17 @@ section {
 @media screen and (max-width: 769px) {
   .subtitle,
   .title {
-    font-size: 43px;
+    font-size: 38px;
   }
   .banner-image {
     margin-top: 0;
   }
   .main-banner {
     display: flex;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     flex-direction: column-reverse;
     margin-top: 7rem;
   }
@@ -187,13 +184,14 @@ section {
     font-size: 17px;
   }
   .design-element {
+    display: none;
     top: 77%;
     left: 17%;
     width: 58%;
   }
-  .services .column[data-v-5fa86a66]:nth-child(2) {
-    border-left: none;
-    border-right: none;
+  .services .column:nth-child(2) {
+    border-left: none !important;
+    border-right: none !important;
   }
 }
 </style>

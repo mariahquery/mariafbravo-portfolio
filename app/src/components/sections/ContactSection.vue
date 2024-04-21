@@ -82,7 +82,12 @@ section {
 
   li {
     display: flex;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     align-items: center;
+    -webkit-align-items: center;
     margin-bottom: 1rem;
     a,
     p {
@@ -95,13 +100,23 @@ section {
 }
 @media screen and (max-width: 769px) {
   .info {
-    margin: 3rem 7rem 10rem 7rem;
+    margin: 4rem 7rem 13rem 7rem;
   }
   .column-mail {
     display: flex;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     flex-direction: column;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
     align-items: center;
-    margin-top: -7rem;
+    -webkit-align-items: center;
+    margin-top: -4rem;
   }
+  section {
+    padding-top: 40px;
+  } 
 }
 </style>
