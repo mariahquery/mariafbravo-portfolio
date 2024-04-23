@@ -6,13 +6,14 @@
           <div class="column">
             <div class="banner-content-wrapper">
               <img
-                class="banner-text"
+                class="banner-text animate__animated animate__slower animate__fadeIn"
                 src="../../assets/banner-text.svg"
-                alt="Banner text"
+                loading="lazy"
+                alt="Hi I'm Maria, I deign and build digital products for the ideal user experience."
               />
               <a href="#contact-me">
                 <button
-                  class="button-special button--wayra button--border-thick button--size-l"
+                  class="button-special button--wayra button--border-thick button--size-l animate__animated animate__slower animate__fadeIn"
                 >
                   Let's Get In Touch!
                 </button>
@@ -22,31 +23,32 @@
           <div class="column">
             <div>
               <img
-                class="banner-image"
+                class="banner-image animate__animated animate__slower animate__fadeIn"
                 src="../../assets/banner-image-base.svg"
+                loading="lazy"
                 alt="Banner image"
               />
             </div>
           </div>
         </div>
 
-        <div class="services columns">
+        <div class="services columns  animate__animated animate__fadeInDown animate__delay-1s">
           <div class="column">
             <div class="banner-service-item">
               <div class="wrapper">📱</div>
-              <h3 class="banner-service-title">Responsive Websites</h3>
+              <h1 class="banner-service-title">Responsive Websites</h1>
             </div>
           </div>
           <div class="column">
             <div class="banner-service-item">
               <div class="wrapper">🛠️</div>
-              <h3 class="banner-service-title">CMS solutions with Webflow</h3>
+              <h2 class="banner-service-title">CMS solutions with Webflow</h2>
             </div>
           </div>
           <div class="column">
             <div class="banner-service-item">
               <div class="wrapper">🚀</div>
-              <h3 class="banner-service-title">Web Performance and SEO</h3>
+              <h2 class="banner-service-title">Web Performance and SEO</h2>
             </div>
           </div>
         </div>

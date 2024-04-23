@@ -6,7 +6,7 @@ import Card from "../Card.vue";
   <section id="services">
     <div class="container">
       <div class="column">
-        <h1 class="title">Services</h1>
+        <h4 class="title">Services</h4>
       </div>
 
       <div class="columns">

@@ -7,7 +7,7 @@ import TechnologyItem from "../TechnologyItem.vue";
     <div class="container">
       <div class="columns">
         <div class="column">
-          <h1 class="title has-text-centered">Technologies</h1>
+          <h6 class="title has-text-centered">Technologies</h6>
         </div>
       </div>
       <div class="columns">

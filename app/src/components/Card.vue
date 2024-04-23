@@ -9,7 +9,7 @@ const props = defineProps({
 <template>
   <div class="card">
     <slot name="emoji"></slot>
-    <h3>{{ props.title }}</h3>
+    <h5>{{ props.title }}</h5>
     <p>{{ props.description }}</p>
   </div>
 </template>

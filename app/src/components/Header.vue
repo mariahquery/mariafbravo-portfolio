@@ -65,7 +65,7 @@ const triggerMenuItem = () => {
                   href="https://www.linkedin.com/in/mariafbravo/"
                   target="_blank"
                 >
-                  <img src="../assets/icons/linkedin.svg" alt="LinkedIn" />
+                  <img src="../assets/icons/linkedin.svg" alt="Maria Bravo's LinkedIn Profile" />
                   <strong>LinkedIn</strong>
                 </a>
               </div>

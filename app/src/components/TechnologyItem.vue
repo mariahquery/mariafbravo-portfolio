@@ -12,8 +12,8 @@ function getImageUrl() {
 
 <template>
   <div class="wrapper">
-    <img :src="getImageUrl()" :alt="`${props.title}`" />
-    <h5>{{ props.title }}</h5>
+    <img :src="getImageUrl()" :alt="`${props.title}`" loading="lazy" />
+    <div class="title">{{ props.title }}</div>
   </div>
 </template>
 
@@ -26,7 +26,7 @@ function getImageUrl() {
 img {
   margin: 1.5rem 0;
 }
-h5 {
+.title {
   font-size: 24px;
   font-family: "Hind Siliguri SemiBold", sans-serif;
   margin-top: 1rem;

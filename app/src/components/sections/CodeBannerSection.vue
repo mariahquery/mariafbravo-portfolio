@@ -3,12 +3,12 @@
 <template>
   <section>
     <div class="container-fluid bg-img">
-      <div class="container pr">
-        <div class="columns wrapper">
+      <div class="container wrapper">
+        <div class="columns">
           <div class="column is-one-third">
-            <h5 class="content-title">
+            <h6 class="content-title">
               Explore the code behind my website <span><></span>
-            </h5>
+            </h6>
             <p class="content-description">
               I designed and developed this website as a showcase of my skills,
               and I invite you to explore my code on my GitHub repository.
@@ -20,18 +20,12 @@
               <button class="button is-rounded github">
                 <strong>View on my GitHub</strong>
                 <img
+                  loading="lazy"
                   src="../../assets/icons/arrow-right.svg"
-                  alt="Arrow right"
+                  alt="Visual Studio Code Maria Bravo Website Code"
                 />
               </button>
             </a>
-          </div>
-          <div class="column pr">
-            <img
-              src="../../assets/VsCode.svg"
-              alt="Visual Studio Code"
-              class="bg-code-banner"
-            />
           </div>
         </div>
       </div>
@@ -40,10 +34,6 @@
 </template>
 
 <style scoped lang="scss">
-.pr {
-  position: relative;
-}
-
 .github {
   color: #ffffff;
   background-color: transparent;
@@ -61,6 +51,14 @@
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
+  position: relative;
+}
+.wrapper {
+  position: absolute;
+  width: 100%;
+  transform: translate(-50%, 50%);
+  left: 50%;
+  bottom: 50%;
 }
 .content-title {
   font-size: 69px;
@@ -82,11 +80,6 @@
   margin-bottom: 3rem;
 }
 .wrapper {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, 35%);
-  width: 100%;
   .title {
     font-family: "Hind Siliguri Bold", sans-serif;
     color: #ffffff;
@@ -112,11 +105,11 @@
 }
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
-  .wrapper {
-    transform: translate(-40%, 35%);
-  }
   .content-title {
     font-size: 40px;
+  }
+  .wrapper {
+    left: 65%;
   }
 }
 
@@ -128,11 +121,13 @@
     transform: unset;
     .content-title {
       font-size: 38px;
-      margin: 4rem 4rem 0 5rem;
+      margin: 0 4rem 0 5rem;
+      max-width: 195px;
     }
     .content-description {
       font-size: 18px;
-      margin: 0 4rem 1.2rem 5rem;
+      margin: 0px 8rem 1.2rem 5rem;
+      max-width: 250px;
     }
     .github {
       margin: 2rem 4rem 1.2rem 5rem;

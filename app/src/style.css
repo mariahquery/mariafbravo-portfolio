@@ -44,6 +44,10 @@ html {
   scroll-behavior: smooth;
 }
 
+.hidden {
+  display: none;
+}
+
 .main {
   overflow-y: scroll;
   scroll-behavior: smooth;

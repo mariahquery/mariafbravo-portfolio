@@ -4,12 +4,12 @@
   <section class="container what-i-can-offer-you">
     <div class="columns row">
       <div class="column is-two-fifths is-flex">
-        <img src="../../assets/building-websites.svg" />
+        <img src="../../assets/building-websites.svg" loading="lazy" alt="Responsive Websites from Vision to Life"/>
       </div>
       <div class="column is-one-fifth"></div>
       <div class="column">
         <div class="wrapper">
-          <h4 class="item-title">Responsive Websites from Vision to Life</h4>
+          <h5 class="item-title">Responsive Websites from Vision to Life</h5>
           <p class="item-subtitle">
             From innovative design to robust code, creating a website that
             perfectly suits your vision. From custom-built websites to small
@@ -23,7 +23,7 @@
     <div class="columns row">
       <div class="column is-flex-center-tablet">
         <div class="wrapper">
-          <h4 class="item-title">Manage Your Website Content Easily</h4>
+          <h5 class="item-title">Manage Your Website Content Easily</h5>
           <p class="item-subtitle">
             Simplify your website management with our intuitive content system.
             Effortlessly update, edit, and organize your web content with our
@@ -33,18 +33,18 @@
       </div>
       <div class="column is-one-fifth"></div>
       <div class="column is-two-fifths is-flex-center-tablet">
-        <img src="../../assets/editing.svg" />
+        <img src="../../assets/editing.svg" loading="lazy" alt="Manage Your Website Content Easily"/>
       </div>
     </div>
 
     <div class="columns row">
       <div class="column is-two-fifths is-flex">
-        <img src="../../assets/dashboards.svg" />
+        <img src="../../assets/dashboards.svg" loading="lazy" alt="Powering Dashboards that drive decisions"/>
       </div>
       <div class="column is-one-fifth"></div>
       <div class="column">
         <div class="wrapper">
-          <h4 class="item-title">Powering Dashboards that drive decisions</h4>
+          <h5 class="item-title">Powering Dashboards that drive decisions</h5>
           <p class="item-subtitle">
             Elevate your decision-making with our advanced dashboards, designed
             to provide insightful data at your fingertips. Harness the power of

@@ -2,11 +2,11 @@
   <section id="about-me">
     <div class="container">
       <div class="column is-two-thirds">
-        <h4 class="services title">
+        <h3 class="services title">
           Bridging the gap between <br /><span class="main-color"
             >design & development</span
           >
-        </h4>
+        </h3>
         <p class="description">
           Hello!! My name is Maria and I'm passionate developer with design skills with over 8
           years experience. I love giving life to digital user experiences!

@@ -8,11 +8,11 @@
             <iframe
               id="JotFormIFrame-240914489940364"
               title="Maria Furtado Bravo's website Contact Form"
-              onload="window.parent.scrollTo(0,0)"
               allowtransparency="true"
               allow="geolocation; microphone; camera; fullscreen"
               src="https://form.jotform.com/240914489940364"
               frameborder="0"
+              loading="lazy"
               style="
                 min-width: 100%;
                 max-width: 100%;

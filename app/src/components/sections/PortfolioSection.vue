@@ -2,7 +2,7 @@
   <section id="portfolio">
     <div class="container">
       <div class="column">
-        <h1 class="title is-3">Portfolio</h1>
+        <h6 class="title is-3">Portfolio</h6>
         <p class="subtitle">
           Here are some of the projects I've worked on. I've designed and
           developed websites, web apps, and mobile apps for a variety of clients
@@ -17,14 +17,15 @@
           >
             <figure>
               <img
-                src="../../assets/portfolio/portfolio-img-4.jpg"
+                src="../../assets/portfolio/portfolio-img-4.webp"
+                loading="lazy"
                 alt="Körber Design System"
               />
               <figcaption>
                 <div class="wrapper">
-                  <h4>Körber Design System</h4>
+                  <h6>Körber Design System</h6>
                   <p>
-                    Körber Design System is a Design System for the all Körber
+                    <b>Körber Design System</b>is a Design System for the all Körber
                     digital products. I designed and developed some of the
                     Design System guidelines and components using
                     <strong>Typescript</strong>,
@@ -43,16 +44,16 @@
           >
             <figure>
               <img
-                src="../../assets/portfolio/portfolio-img-3.jpg"
+                src="../../assets/portfolio/portfolio-img-3.webp"
+                loading="lazy"
                 alt="Talent Portugal"
               />
               <figcaption>
                 <div class="wrapper">
-                  <h4>AIR</h4>
+                  <h6>AIR</h6>
                   <p>
-                    AIR is a platform that offer analytics solutions based on AI
-                    models for companies to improve their business. I designed
-                    it with Adobe XD and developed is using
+                    <b>AIR</b> is a platform that offer analytics solutions based on AI
+                    models for companies to improve their business. I usewd Adobe XD and developed it with
                     <strong>HTML5</strong>, <strong>CSS3 (SCSS)</strong>,
                     <strong>JavaScript</strong>, <strong>Vue.js</strong>,
                     <strong>Git</strong>, <strong>Chart.js</strong>,
@@ -70,14 +71,15 @@
           <a href="https://trustai.eu/" target="_blank">
             <figure>
               <img
-                src="../../assets/portfolio/portfolio-img-6.jpg"
+                src="../../assets/portfolio/portfolio-img-6.webp"
+                loading="lazy"
                 alt="Trust AI"
               />
               <figcaption>
                 <div class="wrapper">
-                  <h4>Trust AI</h4>
+                  <h6>Trust AI</h6>
                   <p>
-                    Trust AI is a website that I developing while working for
+                    <b>Trust AI</b> is a website that I developing while working for
                     LTPlabs. It presents a transparent, reliable and unbiased
                     smart AI tool that's applied in specific use cases. I
                     designed and developed the website with
@@ -94,17 +96,19 @@
         <div class="column">
           <figure>
             <img
-              src="../../assets/portfolio/portfolio-img-1.jpg"
+              src="../../assets/portfolio/portfolio-img-1.webp"
+              loading="lazy"
               alt="EUREKATHON"
             />
             <figcaption>
               <div class="wrapper">
-                <h4>EUREKATHON</h4>
+                <h6>EUREKATHON</h6>
                 <p>
-                  Eurekathon is a data-driven competition that addresses
+                  <b>Eurekathon</b> is a data-driven competition that addresses
                   societal issues associated with sustainable development goals
                   supported by the European Union. I designed and developed
                   Eurekathon's all three editions:
+                  <br>
                   <a href="https://www.eurekathon.com/" target="_blank">2021</a
                   >,
                   <a
@@ -129,14 +133,15 @@
           <a href="https://www.susanasoarespinto.eu/" target="_blank">
             <figure>
               <img
-                src="../../assets/portfolio/portfolio-img-5.jpg"
+                src="../../assets/portfolio/portfolio-img-5.webp"
+                loading="lazy"
                 alt="Susana Soares Pinto"
               />
               <figcaption>
                 <div class="wrapper">
-                  <h4>Susana Soares Pinto</h4>
+                  <h6>Susana Soares Pinto</h6>
                   <p>
-                    Susana Soares Pinto is a portuguese multimedia and plastic
+                    <b>Susana Soares Pinto</b> is a portuguese multimedia and plastic
                     artist. I designed and developed her website to showcase her
                     work and exhibitions. The website includes a gallery of her
                     work with a <strong>CMS</strong> to manage her own content
@@ -152,14 +157,15 @@
             <a href="https://talentportugal.com/" target="_blank">
               <figure>
                 <img
-                  src="../../assets/portfolio/portfolio-img-2.jpg"
+                  src="../../assets/portfolio/portfolio-img-2.webp"
+                  loading="lazy"
                   alt="Talent Portugal"
                 />
                 <figcaption>
                   <div class="wrapper">
-                    <h4>Talent Portugal</h4>
+                    <h6>Talent Portugal</h6>
                     <p>
-                      Talent Portugal is a recruitment platform that connects
+                      <b>Talent Portugal</b> is a recruitment platform that connects
                       companies with the best talent in Portugal. I developed
                       the User Interface of the platform when I worked at
                       Webcomum, which includes a job board, company profiles,
@@ -178,7 +184,7 @@
 
 <style scoped lang="scss">
 #portfolio {
-  padding-top: 90px;
+  padding: 90px 0;
 }
 #portfolio .title {
   font-size: 36px;
@@ -194,6 +200,8 @@ figure {
   position: relative;
   width: 100%;
   height: 100%;
+  transition: all 0.3s;
+  overflow: hidden;
   &::before {
     content: "";
     position: absolute;
@@ -203,6 +211,10 @@ figure {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 0;
+  }
+  &:hover::before {
+    transition: all 0.3s;
+    background-color: rgba(0, 0, 0, 0.7);
   }
 }
 
@@ -216,8 +228,7 @@ figcaption {
   .wrapper {
     width: 100%;
     height: 100%;
-
-    h4 {
+    h6 {
       font-size: 24px;
       font-family: "Hind Siliguri SemiBold", sans-serif;
       margin-bottom: 1rem;
