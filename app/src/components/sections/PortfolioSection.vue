@@ -4,9 +4,11 @@
       <div class="column">
         <h6 class="title is-3">Portfolio</h6>
         <p class="subtitle">
-          Here are some of the projects I've worked on. I've designed and
-          developed websites, web apps, and mobile apps for a variety of clients
-          and industries like Retail, Logistics, Recruitment and Healthcare.
+          Here are some of the websites that I've took part as a developer and designer.
+          I’ve worked for
+          a small creative agency, a business analytics boutique, and a variety
+          of individual clients as a freelancer.
+          Retail, Logistics, Recruitment and Healthcare are some of the industries of these products.
         </p>
       </div>
       <div class="columns">

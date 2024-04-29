@@ -8,13 +8,10 @@
           >
         </h3>
         <p class="description">
-          Hello!! My name is Maria and I'm passionate developer with design skills with over 8
-          years experience. I love giving life to digital user experiences!
-          <br /><br />
-          I’ve worked for a creative agency, a business analytics boutique and a variety of individual clients.
-          I have experience in designing and developing websites, web apps, and mobile apps for a variety of clients. I have worked in industries like Retail, Logistics, Recruitment and Healthcare. 
-          <br /><br />
-          My goal is to create digital experiences that not only look beautiful but also function flawlessly, making every interaction enjoyable and memorable.
+          Hello, my name is Maria and I'm passionate front end developer with
+          design skills with over 8 years experience. I love creating stuff for web and giving life to digital user experiences!
+          <br><br> 
+          I design and develop products from end to end, from the initial design draft to the last character of code.
         </p>
       </div>
     </div>

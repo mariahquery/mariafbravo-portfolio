@@ -9,7 +9,7 @@
                 class="banner-text animate__animated animate__slower animate__fadeIn"
                 src="../../assets/banner-text.svg"
                 loading="lazy"
-                alt="Hi I'm Maria, I deign and build digital products for the ideal user experience."
+                alt="Hi I'm Maria, I design and build digital products for the ideal user experience."
               />
               <a href="#contact-me">
                 <button
@@ -36,19 +36,19 @@
           <div class="column">
             <div class="banner-service-item">
               <div class="wrapper">📱</div>
-              <h1 class="banner-service-title">Responsive Websites</h1>
+              <h1 class="banner-service-title">Websites supported in all devices</h1>
             </div>
           </div>
           <div class="column">
             <div class="banner-service-item">
               <div class="wrapper">🛠️</div>
-              <h2 class="banner-service-title">CMS solutions with Webflow</h2>
+              <h2 class="banner-service-title">Content Management Systems support</h2>
             </div>
           </div>
           <div class="column">
             <div class="banner-service-item">
               <div class="wrapper">🚀</div>
-              <h2 class="banner-service-title">Web Performance and SEO</h2>
+              <h2 class="banner-service-title">Search Engine Optimization and Performance</h2>
             </div>
           </div>
         </div>

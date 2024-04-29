@@ -21,7 +21,7 @@ const props = defineProps({
   padding: 40px;
   min-height: 270px;
   margin-bottom: 1.5rem;
-  h3 {
+  h5 {
     margin-bottom: 16px;
     font-size: 20px;
     font-weight: bold;

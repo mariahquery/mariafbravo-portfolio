@@ -9,12 +9,10 @@
       <div class="column is-one-fifth"></div>
       <div class="column">
         <div class="wrapper">
-          <h5 class="item-title">Responsive Websites from Vision to Life</h5>
+          <h5 class="item-title">Websites from Design to Code</h5>
           <p class="item-subtitle">
-            From innovative design to robust code, creating a website that
-            perfectly suits your vision. From custom-built websites to small
-            e-commerce platforms, we deliver a seamless experience that
-            captivates your audience.
+            Creating websites that
+            perfectly suits your vision. From custom-built web apps to small websites, captivating your audience with a great user experience.
           </p>
         </div>
       </div>
@@ -23,10 +21,10 @@
     <div class="columns row">
       <div class="column is-flex-center-tablet">
         <div class="wrapper">
-          <h5 class="item-title">Manage Your Website Content Easily</h5>
+          <h5 class="item-title">Manage your Website Content Easily</h5>
           <p class="item-subtitle">
-            Simplify your website management with our intuitive content system.
-            Effortlessly update, edit, and organize your web content with our
+            Simplify your website management with a intuitive content system.
+            Effortlessly update, edit, and organize your web content with
             user-friendly tools, ensuring your site stays fresh and relevant.
           </p>
         </div>
@@ -46,9 +44,7 @@
         <div class="wrapper">
           <h5 class="item-title">Powering Dashboards that drive decisions</h5>
           <p class="item-subtitle">
-            Elevate your decision-making with our advanced dashboards, designed
-            to provide insightful data at your fingertips. Harness the power of
-            real-time analytics and visualizations to make informed decisions.
+            Improve your web app by with tailormade dashboards to provide insightful data at your fingertips. Include analytics on your website to make informed decisions.
           </p>
         </div>
       </div>

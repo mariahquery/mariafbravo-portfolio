@@ -13,7 +13,7 @@ import Card from "../Card.vue";
         <div class="column is-one-third-fullhd">
           <Card
             title="Website Development"
-            description="I develop custom websites using modern web technologies using Vue.js, HTML5, CSS3, and JavaScript. I also use Webflow for CMS solutions."
+            description="Simple or tailormade websites using top notch modern web technologies like Vue.js, Typescript, Vite and Vuex."
           >
             <template v-slot:emoji><div class="emoji">👩🏼‍💻</div></template>
           </Card>
@@ -21,14 +21,14 @@ import Card from "../Card.vue";
         <div class="column">
           <Card
             title="Responsive Web Design"
-            description="I design responsive websites that look great on all devices and screen sizes such as desktops, tablets, and smartphones."
+            description="Websites are specially designs to look great on all devices and screen sizes such as desktops, tablets, and smartphones."
             ><template v-slot:emoji><div class="emoji">📱</div></template></Card
           >
         </div>
         <div class="column">
           <Card
             title="User Experience and Interface Design"
-            description="I create intuitive and user-friendly interfaces to enhance the user experience. I use Figma for design and prototyping."
+            description="Intuitive and user-friendly interfaces to improve your website's user experience. The user is the center by studying its goals and pain points."
             ><template v-slot:emoji><div class="emoji">⚙️</div></template></Card
           >
         </div>
@@ -37,22 +37,22 @@ import Card from "../Card.vue";
       <div class="columns">
         <div class="column is-one-third-fullhd">
           <Card
-            title="Content Management Systems (CMS) Solutions"
-            description="I build websites with CMS solutions like Webflow to make content management easy for clients. "
+            title="Content Management Systems Solutions"
+            description="Manage the content of your website automnously with a user-friendly interface supported by Webflow."
             ><template v-slot:emoji><div class="emoji">🛠️</div></template></Card
           >
         </div>
         <div class="column">
           <Card
-            title="SEO Optimization"
-            description="I optimize websites for search engines to improve visibility and ranking."
+            title="Search Engine Optimization"
+            description="The code of your website is specially prepared to improve visibility in order to get on top of the search engines ranking."
             ><template v-slot:emoji><div class="emoji">🎯</div></template></Card
           >
         </div>
         <div class="column">
           <Card
             title="Performance Optimization"
-            description="I optimize websites for speed and performance to provide a better user experience."
+            description="All kind of assets on your website will be optimized for speed and performance to provide a better user experience."
             ><template v-slot:emoji><div class="emoji">🚀</div></template></Card
           >
         </div>
