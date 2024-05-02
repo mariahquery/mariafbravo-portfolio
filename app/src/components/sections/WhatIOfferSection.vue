@@ -96,6 +96,10 @@
 }
 
 @media screen and (max-width: 769px) {
+  .is-two-fifths {
+    justify-content: center;
+    -webkit-justify-content: center;
+  }
   .wrapper {
     padding: 20px 0;
     .item-title {
@@ -108,7 +112,7 @@
     }
   }
   .row {
-    margin: 90px 0;
+    margin: 40px 0;
   }
   .columns:nth-child(2) {
     display: flex;

@@ -40,7 +40,7 @@
 }
 @media screen and (max-width: 769px) {
   .banner-title {
-    font-size: 30px;
+    font-size: 26px;
   }
   .banner-padding {
     padding: 35px 0 90px 0;

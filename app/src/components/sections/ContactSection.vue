@@ -116,7 +116,7 @@ section {
     margin-top: -4rem;
   }
   section {
-    padding-top: 40px;
+    padding-top: 60px;
   } 
 }
 </style>

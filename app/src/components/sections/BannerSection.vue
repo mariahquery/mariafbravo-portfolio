@@ -8,7 +8,6 @@
               <img
                 class="banner-text animate__animated animate__slower animate__fadeIn"
                 src="../../assets/banner-text.svg"
-                loading="lazy"
                 alt="Hi I'm Maria, I design and build digital products for the ideal user experience."
               />
               <a href="#contact-me">
@@ -21,34 +20,83 @@
             </div>
           </div>
           <div class="column">
-            <div>
-              <img
-                class="banner-image animate__animated animate__slower animate__fadeIn"
-                src="../../assets/banner-image-base.svg"
-                loading="lazy"
-                alt="Banner image"
-              />
+            <div
+              class="banner-image-wrapper animate__animated animate__slower animate__fadeIn"
+            >
+              <div class="circle">
+                <div
+                  class="custom-tile developer animate__animated animate__fadeInLeft"
+                >
+                  <div class="symbol blue"></div>
+                  <strong>developer</strong>
+                </div>
+                <div
+                  class="custom-tile projects animate__animated animate__fadeInRight"
+                >
+                  <div
+                    class="symbol light-blue is-flex is-justify-content-center is-align-items-center"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="26"
+                      height="26"
+                      fill="none"
+                    >
+                      <path
+                        fill="#3B1DF4"
+                        fill-rule="evenodd"
+                        d="M20.583 20.583c0 .598-.486 1.084-1.083 1.084h-13a1.084 1.084 0 0 1-1.083-1.084V8.667c0-.598.486-1.084 1.083-1.084v1.084c0 1.195.972 2.166 2.167 2.166h8.666A2.169 2.169 0 0 0 19.5 8.667V7.583c.597 0 1.083.486 1.083 1.084v11.916ZM8.667 4.333l8.666.004v4.33H8.667V4.333ZM19.5 5.417V4.333a2.169 2.169 0 0 0-2.167-2.166H8.667A2.169 2.169 0 0 0 6.5 4.333v1.084a3.254 3.254 0 0 0-3.25 3.25v11.916a3.254 3.254 0 0 0 3.25 3.25h13a3.254 3.254 0 0 0 3.25-3.25V8.667a3.254 3.254 0 0 0-3.25-3.25Z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                  </div>
+                  <div>
+                    <div class="custom-number">20+</div>
+                    <strong>projects</strong>
+                  </div>
+                </div>
+                <div
+                  class="custom-tile designer animate__animated animate__fadeInRight"
+                >
+                  <div class="symbol yellow"></div>
+                  <strong>designer</strong>
+                </div>
+
+                <img
+                  class="banner-image"
+                  src="../../assets/maria.webp"
+                  alt="Maria"
+                />
+              </div>
             </div>
           </div>
         </div>
 
-        <div class="services columns  animate__animated animate__fadeInDown animate__delay-1s">
+        <div
+          class="services columns animate__animated animate__fadeIn animate__delay-1s"
+        >
           <div class="column">
             <div class="banner-service-item">
               <div class="wrapper">📱</div>
-              <h1 class="banner-service-title">Websites supported in all devices</h1>
+              <h1 class="banner-service-title">
+                Websites supported in all devices
+              </h1>
             </div>
           </div>
           <div class="column">
             <div class="banner-service-item">
               <div class="wrapper">🛠️</div>
-              <h2 class="banner-service-title">Content Management Systems support</h2>
+              <h2 class="banner-service-title">
+                Content Management Systems support
+              </h2>
             </div>
           </div>
           <div class="column">
             <div class="banner-service-item">
               <div class="wrapper">🚀</div>
-              <h2 class="banner-service-title">Search Engine Optimization and Performance</h2>
+              <h2 class="banner-service-title">
+                Search Engine Optimization and Performance
+              </h2>
             </div>
           </div>
         </div>
@@ -58,6 +106,7 @@
 </template>
 
 <style scoped lang="scss">
+
 section {
   padding: 1rem 0 !important;
 }
@@ -69,6 +118,88 @@ section {
 .main-banner {
   margin-top: 8rem;
 }
+
+.mask {
+  mask-image: url("../../assets/maria.png");
+}
+
+.banner-image-wrapper {
+  display: flex;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  justify-content: center;
+  -webkit-justify-content: center;
+  .circle {
+    background-color: #33efab;
+    border-radius: 100%;
+    width: 428px;
+    height: 428px;
+    position: relative;
+  }
+  .custom-tile {
+    background-color: #fff;
+    border-radius: 15px;
+    position: absolute;
+    padding: 10px 18px;
+    text-transform: capitalize;
+    display: flex;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    align-items: center;
+    -webkit-align-items: center;
+
+    .custom-number {
+      font-size: 25px;
+      font-family: "Hind Siliguri SemiBold", sans-serif;
+      font-weight: bold;
+      color: #3b1df4;
+      line-height: 25px;
+    }
+
+    .symbol {
+      width: 14px;
+      height: 14px;
+      border-radius: 100%;
+      display: inline-block;
+      margin-right: 10px;
+      &.blue {
+        background-color: #3b1df4;
+      }
+      &.light-blue {
+        background-color: rgba(72, 128, 255, 0.3);
+        width: 50px;
+        height: 50px;
+      }
+      &.yellow {
+        background-color: #fec704;
+      }
+    }
+    &.developer {
+      top: 45%;
+      left: -18%;
+    }
+    &.projects {
+      top: 14%;
+      left: 75%;
+    }
+    &.designer {
+      top: 60%;
+      left: 84%;
+    }
+  }
+}
+
+.banner-image {
+  position: relative;
+  left: 2%;
+  top: 3%;
+  clip-path: circle(207px at center);
+}
+
 .banner-service-title {
   font-size: 20px;
   font-family: "Hind Siliguri SemiBold", sans-serif;
@@ -114,7 +245,7 @@ section {
   margin-top: 2rem;
   .column:nth-child(1) {
     .wrapper {
-      background-color: #F6F6F6;
+      background-color: #f6f6f6;
       border: 5px solid #33efab;
     }
   }
@@ -122,13 +253,13 @@ section {
     border-left: 1px solid #c9c9c9;
     border-right: 1px solid #c9c9c9;
     .wrapper {
-      background-color: #F6F6F6;
+      background-color: #f6f6f6;
       border: 5px solid #3b1df4;
     }
   }
   .column:nth-child(3) {
     .wrapper {
-      background-color: #F6F6F6;
+      background-color: #f6f6f6;
       border: 5px solid #fec704;
     }
   }
@@ -158,6 +289,28 @@ section {
   margin-top: 0;
 }
 
+@media screen and (max-width: 450px) {
+  .custom-tile {
+    font-size: 14px;
+    &.developer {
+      top: 25% !important;
+      left: -7% !important;
+    }
+    &.projects {
+      top: 8% !important;
+      left: 60% !important;
+    }
+    &.designer {
+      top: 54% !important;
+      left: 77% !important;
+    }
+  }
+  .custom-number {
+    font-size: 21px;
+    line-height: 21px;
+  }
+}
+
 @media screen and (max-width: 769px) {
   .subtitle,
   .title {
@@ -165,6 +318,9 @@ section {
   }
   .banner-image {
     margin-top: 0;
+    left: 0%;
+    top: 0%;
+    clip-path: circle(164px at center);
   }
   .main-banner {
     display: flex;
@@ -173,7 +329,7 @@ section {
     display: -ms-flexbox;
     display: -webkit-flex;
     flex-direction: column-reverse;
-    margin-top: 7rem;
+    margin-top: 4rem;
   }
   .title {
     margin-top: 3rem;
@@ -184,6 +340,10 @@ section {
   }
   .banner-service-title {
     font-size: 17px;
+  }
+  .circle {
+    width: 330px !important;
+    height: 330px !important;
   }
   .design-element {
     display: none;
@@ -196,4 +356,6 @@ section {
     border-right: none !important;
   }
 }
+
+
 </style>

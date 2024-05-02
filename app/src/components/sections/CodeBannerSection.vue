@@ -121,16 +121,16 @@
     transform: unset;
     .content-title {
       font-size: 38px;
-      margin: 0 4rem 0 5rem;
+      margin: 0 4rem 0 2rem;
       max-width: 195px;
     }
     .content-description {
       font-size: 18px;
-      margin: 0px 8rem 1.2rem 5rem;
+      margin: 0px 8rem 1.2rem 2rem;
       max-width: 250px;
     }
     .github {
-      margin: 2rem 4rem 1.2rem 5rem;
+      margin: 2rem 4rem 1.2rem 2rem;
     }
     .bg-code-banner {
       position: relative;

@@ -4,11 +4,11 @@
       <div class="column">
         <h6 class="title is-3">Portfolio</h6>
         <p class="subtitle">
-          Here are some of the websites that I've took part as a developer and designer.
-          I’ve worked for
-          a small creative agency, a business analytics boutique, and a variety
-          of individual clients as a freelancer.
-          Retail, Logistics, Recruitment and Healthcare are some of the industries of these products.
+          Here are some of the websites that I've took part as a developer and
+          designer. I’ve worked for a small creative agency, a business
+          analytics boutique, and a variety of individual clients as a
+          freelancer. Retail, Logistics, Recruitment and Healthcare are some of
+          the industries of these products.
         </p>
       </div>
       <div class="columns">
@@ -27,9 +27,9 @@
                 <div class="wrapper">
                   <h6>Körber Design System</h6>
                   <p>
-                    <b>Körber Design System</b>is a Design System for the all Körber
-                    digital products. I designed and developed some of the
-                    Design System guidelines and components using
+                    <b>Körber Design System</b>is a Design System for the all
+                    Körber digital products. I designed and developed some of
+                    the Design System guidelines and components using
                     <strong>Typescript</strong>,
                     <strong>Web components</strong> with
                     <strong>Lit</strong> and <strong>Figma</strong>.
@@ -54,8 +54,9 @@
                 <div class="wrapper">
                   <h6>AIR</h6>
                   <p>
-                    <b>AIR</b> is a platform that offer analytics solutions based on AI
-                    models for companies to improve their business. I usewd Adobe XD and developed it with
+                    <b>AIR</b> is a platform that offer analytics solutions
+                    based on AI models for companies to improve their business.
+                    I usewd Adobe XD and developed it with
                     <strong>HTML5</strong>, <strong>CSS3 (SCSS)</strong>,
                     <strong>JavaScript</strong>, <strong>Vue.js</strong>,
                     <strong>Git</strong>, <strong>Chart.js</strong>,
@@ -81,10 +82,10 @@
                 <div class="wrapper">
                   <h6>Trust AI</h6>
                   <p>
-                    <b>Trust AI</b> is a website that I developing while working for
-                    LTPlabs. It presents a transparent, reliable and unbiased
-                    smart AI tool that's applied in specific use cases. I
-                    designed and developed the website with
+                    <b>Trust AI</b> is a website that I developing while working
+                    for LTPlabs. It presents a transparent, reliable and
+                    unbiased smart AI tool that's applied in specific use cases.
+                    I designed and developed the website with
                     <strong>HTML5</strong>, <strong>SCSS</strong>,
                     <strong>JavaScript</strong> and
                     <strong>Jekyll</strong> while working at LTPlabs.
@@ -110,7 +111,7 @@
                   societal issues associated with sustainable development goals
                   supported by the European Union. I designed and developed
                   Eurekathon's all three editions:
-                  <br>
+                  <br />
                   <a href="https://www.eurekathon.com/" target="_blank">2021</a
                   >,
                   <a
@@ -143,11 +144,11 @@
                 <div class="wrapper">
                   <h6>Susana Soares Pinto</h6>
                   <p>
-                    <b>Susana Soares Pinto</b> is a portuguese multimedia and plastic
-                    artist. I designed and developed her website to showcase her
-                    work and exhibitions. The website includes a gallery of her
-                    work with a <strong>CMS</strong> to manage her own content
-                    autonomously.
+                    <b>Susana Soares Pinto</b> is a portuguese multimedia and
+                    plastic artist. I designed and developed her website to
+                    showcase her work and exhibitions. The website includes a
+                    gallery of her work with a <strong>CMS</strong> to manage
+                    her own content autonomously.
                   </p>
                 </div>
               </figcaption>
@@ -167,10 +168,10 @@
                   <div class="wrapper">
                     <h6>Talent Portugal</h6>
                     <p>
-                      <b>Talent Portugal</b> is a recruitment platform that connects
-                      companies with the best talent in Portugal. I developed
-                      the User Interface of the platform when I worked at
-                      Webcomum, which includes a job board, company profiles,
+                      <b>Talent Portugal</b> is a recruitment platform that
+                      connects companies with the best talent in Portugal. I
+                      developed the User Interface of the platform when I worked
+                      at Webcomum, which includes a job board, company profiles,
                       and a candidate database.
                     </p>
                   </div>
@@ -251,6 +252,9 @@ img {
 }
 
 @media screen and (max-width: 769px) {
+  #portfolio {
+    padding: 90px 0 0 0;
+  }
   #portfolio .title {
     font-size: 24px;
   }

@@ -59,5 +59,8 @@ section {
   section {
     padding: 40px 0;
   }
+  .title {
+    margin: 5rem 0 4rem 0;
+  }
 }
 </style>
