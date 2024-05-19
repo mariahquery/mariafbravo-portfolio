@@ -40,7 +40,7 @@
               </li>
               <li>
                 <div>📌</div>
-                <p>Full Remote - currently in Portugal</p>
+                <p>Full Remote - currently in Spain</p>
               </li>
             </ul>
           </div>

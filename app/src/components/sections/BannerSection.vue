@@ -27,8 +27,7 @@
                 <div
                   class="custom-tile developer animate__animated animate__fadeInLeft"
                 >
-                  <div class="symbol blue"></div>
-                  <strong>developer</strong>
+                  <div>developer</div>
                 </div>
                 <div
                   class="custom-tile projects animate__animated animate__fadeInRight"
@@ -58,13 +57,12 @@
                 <div
                   class="custom-tile designer animate__animated animate__fadeInRight"
                 >
-                  <div class="symbol yellow"></div>
-                  <strong>designer</strong>
+                  <div>designer</div>
                 </div>
 
                 <img
                   class="banner-image"
-                  src="../../assets/maria.webp"
+                  src="../../assets/maria2.png"
                   alt="Maria"
                 />
               </div>
@@ -106,7 +104,6 @@
 </template>
 
 <style scoped lang="scss">
-
 section {
   padding: 1rem 0 !important;
 }
@@ -195,9 +192,10 @@ section {
 
 .banner-image {
   position: relative;
-  left: 2%;
-  top: 3%;
+  left: 11%;
+  top: 4%;
   clip-path: circle(207px at center);
+  width: 77%;
 }
 
 .banner-service-title {
@@ -318,9 +316,8 @@ section {
   }
   .banner-image {
     margin-top: 0;
-    left: 0%;
-    top: 0%;
-    clip-path: circle(164px at center);
+    top: 4%;
+    clip-path: circle(145px at center);
   }
   .main-banner {
     display: flex;
@@ -342,8 +339,8 @@ section {
     font-size: 17px;
   }
   .circle {
-    width: 330px !important;
-    height: 330px !important;
+    width: 300px !important;
+    height: 300px !important;
   }
   .design-element {
     display: none;
@@ -356,6 +353,4 @@ section {
     border-right: none !important;
   }
 }
-
-
 </style>
