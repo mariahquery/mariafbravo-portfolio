@@ -62,7 +62,7 @@
 
                 <img
                   class="banner-image"
-                  src="../../assets/maria2.png"
+                  src="../../assets/maria.png"
                   alt="Maria"
                 />
               </div>
@@ -136,6 +136,7 @@ section {
     position: relative;
   }
   .custom-tile {
+    font-weight: bold;
     background-color: #fff;
     border-radius: 15px;
     position: absolute;
@@ -192,10 +193,10 @@ section {
 
 .banner-image {
   position: relative;
-  left: 11%;
-  top: 4%;
-  clip-path: circle(207px at center);
-  width: 77%;
+  left: 2%;
+  top: -15%;
+  clip-path: circle(218px at center);
+  width: 96%;
 }
 
 .banner-service-title {
