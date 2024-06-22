@@ -317,7 +317,7 @@ section {
   }
   .banner-image {
     margin-top: 0;
-    top: 4%;
+    top: -12%;
     clip-path: circle(145px at center);
   }
   .main-banner {
