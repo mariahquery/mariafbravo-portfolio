@@ -2,6 +2,7 @@
 import Header from "./components/Header.vue";
 import BannerSection from "./components/sections/BannerSection.vue";
 import AboutMeSection from "./components/sections/AboutMeSection.vue";
+import ClientsSection from "./components/sections/ClientsSection.vue";
 import ServicesSection from "./components/sections/ServicesSection.vue";
 import WhatIOfferSection from "./components/sections/WhatIOfferSection.vue";
 import CodeBannerSection from "./components/sections/CodeBannerSection.vue";
@@ -17,6 +18,7 @@ import Footer from "./components/Footer.vue";
     <Header></Header>
     <BannerSection></BannerSection>
     <AboutMeSection></AboutMeSection>
+    <ClientsSection></ClientsSection>
     <ServicesSection></ServicesSection>
     <WhatIOfferSection></WhatIOfferSection>
     <BannerSmallSection></BannerSmallSection>

@@ -1,5 +1,5 @@
 <script setup>
-import { ref } from "vue";
+import { ref, onMounted, nextTick } from 'vue';
 
 const menuItems = ref([
   { name: "About me", link: "#about-me" },
@@ -11,9 +11,43 @@ const menuItems = ref([
 
 const showNav = ref(false);
 
-const triggerMenuItem = () => {
+const triggerMenuItem = (link) => {
   showNav.value = false;
+  const executeScroll = () => {
+    nextTick(() => {
+      if (link === '#contact-me') {
+        window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+      } else {
+        const element = document.querySelector(link);
+        if (element) {
+          window.history.pushState(null, null, link);
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      }
+    });
+  };
+
+  // Run the scroll logic twice
+  executeScroll();
+  setTimeout(executeScroll, 100);
 };
+
+onMounted(() => {
+  // Ensure the anchor navigation works on initial page load
+  if (window.location.hash) {
+    const anchor = document.querySelector(window.location.hash);
+    if (anchor) {
+      setTimeout(() => {
+        anchor.scrollIntoView({ behavior: 'smooth' });
+      }, 100);
+    }
+  }
+});
+
+// Immediately update URL to include # if not present
+if (!window.location.hash) {
+  window.history.replaceState(null, null, '#');
+}
 </script>
 
 <template>
@@ -54,7 +88,7 @@ const triggerMenuItem = () => {
               <div class="buttons">
                 <template v-for="item in menuItems" :key="item.name">
                   <a
-                    @click="triggerMenuItem"
+                    @click.prevent="triggerMenuItem(item.link)"
                     class="menu-item"
                     :href="item.link"
                     >{{ item.name }}</a

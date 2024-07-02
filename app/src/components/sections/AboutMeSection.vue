@@ -8,10 +8,20 @@
           >
         </h3>
         <p class="description">
-          Hello, my name is Maria and I'm a passionate front end developer with
-          design skills with over 8 years experience. I love creating stuff for web and giving life to digital user experiences!
-          <br><br> 
-          I design and develop products from end to end, from the initial design draft to the last character of code.
+          Hello! I'm Maria, a front-end developer and designer with over 8 years
+          of experience. I specialize in creating captivating web experiences
+          and dynamic digital interfaces.
+          <br /><br />
+          With expertise in both design and development, I develop
+          products to meet both design and functional requirements. My skills
+          include UI components API design and development using vanilla
+          JavaScript. I always try to create the best user experience on
+          websites.
+          <br /><br />
+          I've worked with a diverse range of companies and clients, developing
+          products like B2C websites, SaaS B2B PWAs, and more. Each project is
+          tailored to meet the unique needs of the client, from engaging
+          consumer websites to powerful enterprise tools.
         </p>
       </div>
     </div>

@@ -1,9 +1,17 @@
 <template>
-  <section id="contact-me">
+  <section>
     <div class="container-fluid pr">
       <div class="container">
+        <div class="column">
+          <h6 class="title is-3">Contact Me</h6>
+          <p class="subtitle">
+            Let's get in touch! I'm always open to new opportunities and
+            collaborations. Feel free to reach out to me if you have any
+            questions or just want to say hi!
+          </p>
+        </div>
         <div class="columns">
-          <div class="column column-form pr">
+          <!--<div class="column column-form pr">
             <div class="hide-jotform-logo"></div>
             <iframe
               id="JotFormIFrame-240914489940364"
@@ -22,27 +30,47 @@
               scrolling="no"
             >
             </iframe>
-          </div>
+          </div> -->
+
+          <!--<form @submit.prevent="handleSubmit">
+            <div>
+              <label for="name">Nome:</label>
+              <input type="text" v-model="name" required />
+            </div>
+            <div>
+              <label for="email">Email:</label>
+              <input type="email" v-model="email" required />
+            </div>
+            <div>
+              <label for="message">Email:</label>
+              <textarea for="message"></textarea>
+            </div>
+            <button type="submit">Enviar</button>
+          </form>
+          <div v-if="message">{{ message }}</div>-->
+
           <div class="column column-mail">
-            <img src="../../assets/mail.svg" alt="mail" />
-            <ul class="info">
-              <li>
-                <div>✉️</div>
-                <a href="mailto:front.end.maria@gmail.com"
-                  >front.end.maria@gmail.com</a
-                >
-              </li>
-              <li>
-                <div>👩🏼‍💻</div>
-                <a href="https://www.linkedin.com/in/mariafbravo/"
-                  >https://www.linkedin.com/in/mariafbravo/</a
-                >
-              </li>
-              <li>
-                <div>📌</div>
-                <p>Full Remote - currently in Spain</p>
-              </li>
-            </ul>
+            <div class="contact-info is-flex is-justify-content-center">
+              <!--<img src="../../assets/mail.svg" alt="mail" />-->
+              <ul class="info">
+                <li>
+                  <div>✉️</div>
+                  <a href="mailto:front.end.maria@gmail.com"
+                    >front.end.maria@gmail.com</a
+                  >
+                </li>
+                <li>
+                  <div>👩🏼‍💻</div>
+                  <a href="https://www.linkedin.com/in/mariafbravo/"
+                    >https://www.linkedin.com/in/mariafbravo/</a
+                  >
+                </li>
+                <li>
+                  <div>📌</div>
+                  <p>Full Remote - currently in Portugal</p>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -55,7 +83,39 @@
   </section>
 </template>
 
+<script setup>
+import { ref } from 'vue';
+import { db, collection, addDoc, serverTimestamp } from '../../firebaseConfig';
+
+const name = ref('');
+const email = ref('');
+const message = ref('');
+
+const handleSubmit = async () => {
+  try {
+    await addDoc(collection(db, 'formResponses'), {
+      name: name.value,
+      email: email.value,
+      timestamp: serverTimestamp()
+    });
+    message.value = 'Formulário enviado com sucesso!';
+    name.value = '';
+    email.value = '';
+  } catch (error) {
+    message.value = 'Erro ao enviar formulário: ' + error.message;
+  }
+};
+</script>
+
 <style scoped lang="scss">
+.title {
+  font-size: 36px;
+  font-family: "Hind Siliguri Bold", sans-serif;
+  margin-bottom: 1.5rem;
+}
+.subtitle {
+  font-size: 18px;
+}
 section {
   padding-top: 90px;
 }
@@ -78,7 +138,7 @@ section {
   bottom: 20px;
 }
 .info {
-  margin: 2.5rem 3rem;
+  margin: 6rem 3rem;
 
   li {
     display: flex;
@@ -100,7 +160,7 @@ section {
 }
 @media screen and (max-width: 769px) {
   .info {
-    margin: 4rem 7rem 13rem 7rem;
+    margin: 8rem 7rem 16rem 7rem;
   }
   .column-mail {
     display: flex;
@@ -117,6 +177,6 @@ section {
   }
   section {
     padding-top: 60px;
-  } 
+  }
 }
 </style>
