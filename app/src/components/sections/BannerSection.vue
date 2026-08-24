@@ -122,12 +122,7 @@ section {
 
 .banner-image-wrapper {
   display: flex;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
   justify-content: center;
-  -webkit-justify-content: center;
   .circle {
     background-color: #33efab;
     border-radius: 100%;
@@ -143,12 +138,7 @@ section {
     padding: 10px 18px;
     text-transform: capitalize;
     display: flex;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
     align-items: center;
-    -webkit-align-items: center;
 
     .custom-number {
       font-size: 25px;
@@ -209,15 +199,8 @@ section {
 }
 .banner-service-item {
   display: flex;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
   flex-direction: column;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
   align-items: center;
-  -webkit-align-items: center;
   margin-top: 3rem;
   margin-bottom: 3rem;
 
@@ -225,14 +208,8 @@ section {
     background-color: #33efab;
     border-radius: 100%;
     display: flex;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
     justify-content: center;
-    -webkit-justify-content: center;
     align-items: center;
-    -webkit-align-items: center;
     padding: 17px;
     margin-bottom: 1.5rem;
     font-size: 35px;
@@ -322,10 +299,6 @@ section {
   }
   .main-banner {
     display: flex;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
     flex-direction: column-reverse;
     margin-top: 4rem;
   }

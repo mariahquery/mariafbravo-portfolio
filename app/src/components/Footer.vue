@@ -1,6 +1,10 @@
+<script setup>
+const year = new Date().getFullYear();
+</script>
+
 <template>
   <footer>
-    <p>Maria Furtado Bravo © 2024</p>
+    <p>Maria Furtado Bravo © {{ year }}</p>
   </footer>
 </template>
 

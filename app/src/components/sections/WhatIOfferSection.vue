@@ -86,19 +86,13 @@
 @media screen and (max-width: 1024px) {
   .is-flex-center-tablet {
     display: flex;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
     justify-content: center;
-    -webkit-justify-content: center;
   }
 }
 
 @media screen and (max-width: 769px) {
   .is-two-fifths {
     justify-content: center;
-    -webkit-justify-content: center;
   }
   .wrapper {
     padding: 20px 0;
@@ -116,13 +110,7 @@
   }
   .columns:nth-child(2) {
     display: flex;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
     flex-direction: column-reverse;
-    -webkit-flex-direction: column-reverse;
-    -ms-flex-direction: column-reverse;
   }
 }
 </style>

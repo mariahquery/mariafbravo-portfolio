@@ -1,5 +1,48 @@
 <script setup>
 import Card from "../Card.vue";
+
+const serviceRows = [
+  [
+    {
+      title: "Website Development",
+      description:
+        "Simple or tailormade websites using top notch modern web technologies like Vue.js, Typescript, Vite and Vuex.",
+      emoji: "👩🏼‍💻",
+    },
+    {
+      title: "Responsive Web Design",
+      description:
+        "Websites are specially designs to look great on all devices and screen sizes such as desktops, tablets, and smartphones.",
+      emoji: "📱",
+    },
+    {
+      title: "User Experience and Interface Design",
+      description:
+        "Intuitive and user-friendly interfaces to improve your website's user experience. The user is the center by studying its goals and pain points.",
+      emoji: "⚙️",
+    },
+  ],
+  [
+    {
+      title: "Content Management Systems Solutions",
+      description:
+        "Manage the content of your website automnously with a user-friendly interface supported by Webflow.",
+      emoji: "🛠️",
+    },
+    {
+      title: "Search Engine Optimization",
+      description:
+        "The code of your website is specially prepared to improve visibility in order to get on top of the search engines ranking.",
+      emoji: "🎯",
+    },
+    {
+      title: "Performance Optimization",
+      description:
+        "All kind of assets on your website will be optimized for speed and performance to provide a better user experience.",
+      emoji: "🚀",
+    },
+  ],
+];
 </script>
 
 <template>
@@ -9,52 +52,16 @@ import Card from "../Card.vue";
         <h4 class="title">Services</h4>
       </div>
 
-      <div class="columns">
-        <div class="column is-one-third-fullhd">
-          <Card
-            title="Website Development"
-            description="Simple or tailormade websites using top notch modern web technologies like Vue.js, Typescript, Vite and Vuex."
-          >
-            <template v-slot:emoji><div class="emoji">👩🏼‍💻</div></template>
+      <div v-for="(row, rowIndex) in serviceRows" :key="rowIndex" class="columns">
+        <div
+          v-for="(service, index) in row"
+          :key="service.title"
+          class="column"
+          :class="{ 'is-one-third-fullhd': index === 0 }"
+        >
+          <Card :title="service.title" :description="service.description">
+            <template v-slot:emoji><div class="emoji">{{ service.emoji }}</div></template>
           </Card>
-        </div>
-        <div class="column">
-          <Card
-            title="Responsive Web Design"
-            description="Websites are specially designs to look great on all devices and screen sizes such as desktops, tablets, and smartphones."
-            ><template v-slot:emoji><div class="emoji">📱</div></template></Card
-          >
-        </div>
-        <div class="column">
-          <Card
-            title="User Experience and Interface Design"
-            description="Intuitive and user-friendly interfaces to improve your website's user experience. The user is the center by studying its goals and pain points."
-            ><template v-slot:emoji><div class="emoji">⚙️</div></template></Card
-          >
-        </div>
-      </div>
-
-      <div class="columns">
-        <div class="column is-one-third-fullhd">
-          <Card
-            title="Content Management Systems Solutions"
-            description="Manage the content of your website automnously with a user-friendly interface supported by Webflow."
-            ><template v-slot:emoji><div class="emoji">🛠️</div></template></Card
-          >
-        </div>
-        <div class="column">
-          <Card
-            title="Search Engine Optimization"
-            description="The code of your website is specially prepared to improve visibility in order to get on top of the search engines ranking."
-            ><template v-slot:emoji><div class="emoji">🎯</div></template></Card
-          >
-        </div>
-        <div class="column">
-          <Card
-            title="Performance Optimization"
-            description="All kind of assets on your website will be optimized for speed and performance to provide a better user experience."
-            ><template v-slot:emoji><div class="emoji">🚀</div></template></Card
-          >
         </div>
       </div>
     </div>

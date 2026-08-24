@@ -1,5 +1,20 @@
 <script setup>
 import TechnologyItem from "../TechnologyItem.vue";
+
+const technologyRows = [
+  [
+    { title: "Vue.js", icon: "vue" },
+    { title: "Javascript", icon: "javascript" },
+    { title: "HTML5", icon: "html5" },
+    { title: "SCSS", icon: "sass" },
+  ],
+  [
+    { title: "Typescript", icon: "typescript" },
+    { title: "CSS3", icon: "css3" },
+    { title: "Webflow", icon: "webflow" },
+    { title: "Figma", icon: "figma" },
+  ],
+];
 </script>
 
 <template>
@@ -10,32 +25,14 @@ import TechnologyItem from "../TechnologyItem.vue";
           <h6 class="title has-text-centered">Technologies</h6>
         </div>
       </div>
-      <div class="columns">
-        <div class="column is-one-quarter-fullhd">
-          <TechnologyItem title="Vue.js" icon="vue" />
-        </div>
-        <div class="column">
-          <TechnologyItem title="Javascript" icon="javascript" />
-        </div>
-        <div class="column">
-          <TechnologyItem title="HTML5" icon="html5" />
-        </div>
-        <div class="column">
-          <TechnologyItem title="SCSS" icon="sass" />
-        </div>
-      </div>
-      <div class="columns">
-        <div class="column is-one-quarter-fullhd">
-          <TechnologyItem title="Typescript" icon="typescript" />
-        </div>
-        <div class="column">
-          <TechnologyItem title="CSS3" icon="css3" />
-        </div>
-        <div class="column">
-          <TechnologyItem title="Webflow" icon="webflow" />
-        </div>
-        <div class="column">
-          <TechnologyItem title="Figma" icon="figma" />
+      <div v-for="(row, rowIndex) in technologyRows" :key="rowIndex" class="columns">
+        <div
+          v-for="(tech, index) in row"
+          :key="tech.title"
+          class="column"
+          :class="{ 'is-one-quarter-fullhd': index === 0 }"
+        >
+          <TechnologyItem :title="tech.title" :icon="tech.icon" />
         </div>
       </div>
     </div>

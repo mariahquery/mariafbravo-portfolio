@@ -82,12 +82,7 @@ section {
 
   li {
     display: flex;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
     align-items: center;
-    -webkit-align-items: center;
     margin-bottom: 1rem;
     a,
     p {
@@ -104,15 +99,8 @@ section {
   }
   .column-mail {
     display: flex;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
     flex-direction: column;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
     align-items: center;
-    -webkit-align-items: center;
     margin-top: -4rem;
   }
   section {
