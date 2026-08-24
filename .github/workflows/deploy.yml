@@ -37,7 +37,7 @@ jobs:
         run: npm run build
 
       - name: Add custom domain (CNAME)
-        run: cp CNAME app/dist/CNAME
+        run: '[ -f CNAME ] && cp CNAME app/dist/CNAME || true'
 
       - name: Upload build artifact
         uses: actions/upload-pages-artifact@v3
