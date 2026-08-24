@@ -32,9 +32,20 @@ jobs:
         working-directory: app
         run: npm ci
 
+      - name: Determine base path
+        id: base
+        run: |
+          if [ -f CNAME ]; then
+            echo "value=/" >> "$GITHUB_OUTPUT"
+          else
+            echo "value=/${{ github.event.repository.name }}/" >> "$GITHUB_OUTPUT"
+          fi
+
       - name: Build
         working-directory: app
         run: npm run build
+        env:
+          VITE_BASE: ${{ steps.base.outputs.value }}
 
       - name: Add custom domain (CNAME)
         run: '[ -f CNAME ] && cp CNAME app/dist/CNAME || true'
