@@ -4,11 +4,10 @@
       <div class="column">
         <h6 class="title is-3">Portfolio</h6>
         <p class="subtitle">
-          Here are some of the websites that I've took part as a developer and
-          designer. I’ve worked for a small creative agency, a business
-          analytics boutique, and a variety of individual clients as a
-          freelancer. Retail, Logistics, Recruitment and Healthcare are some of
-          the industries of these products.
+          A selection of the products I've designed and developed, from the
+          Design System powering 28+ products at Körber Digital, to an
+          AI-powered SaaS platform, EU-funded research projects, and freelance
+          work across Retail, Logistics, Recruitment and Healthcare.
         </p>
       </div>
       <div class="columns">
@@ -27,12 +26,11 @@
                 <div class="wrapper">
                   <h6>Körber Design System</h6>
                   <p>
-                    <b>Körber Design System</b>is a Design System for the all
-                    Körber digital products. I designed and developed some of
-                    the Design System guidelines and components using
-                    <strong>Typescript</strong>,
-                    <strong>Web components</strong> with
-                    <strong>Lit</strong> and <strong>Figma</strong>.
+                    <b>Körber Design System</b> powers 28+ Körber products.
+                    I'm a core contributor leading its AI-readiness (agent
+                    instructions, AI Skills and agentic evals) and building
+                    Web Components with <strong>TypeScript</strong> and
+                    <strong>Lit</strong>.
                   </p>
                 </div>
               </figcaption>
@@ -56,7 +54,7 @@
                   <p>
                     <b>AIR</b> is a platform that offer analytics solutions
                     based on AI models for companies to improve their business.
-                    I usewd Adobe XD and developed it with
+                    I used Adobe XD and developed it with
                     <strong>HTML5</strong>, <strong>CSS3 (SCSS)</strong>,
                     <strong>JavaScript</strong>, <strong>Vue.js</strong>,
                     <strong>Git</strong>, <strong>Chart.js</strong>,

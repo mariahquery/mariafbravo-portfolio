@@ -3,17 +3,18 @@ import TechnologyItem from "../TechnologyItem.vue";
 
 const technologyRows = [
   [
+    { title: "Lit", icon: "lit" },
+    { title: "Typescript", icon: "typescript" },
     { title: "Vue.js", icon: "vue" },
     { title: "Javascript", icon: "javascript" },
-    { title: "HTML5", icon: "html5" },
-    { title: "SCSS", icon: "sass" },
   ],
   [
-    { title: "Typescript", icon: "typescript" },
+    { title: "HTML5", icon: "html5" },
+    { title: "SCSS", icon: "sass" },
     { title: "CSS3", icon: "css3" },
-    { title: "Webflow", icon: "webflow" },
     { title: "Figma", icon: "figma" },
   ],
+  [{ title: "Agentic AI", icon: "ai-agents" }],
 ];
 </script>
 

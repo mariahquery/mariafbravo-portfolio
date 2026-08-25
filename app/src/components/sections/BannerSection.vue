@@ -5,16 +5,18 @@
         <div class="main-banner columns">
           <div class="column">
             <div class="banner-content-wrapper">
-              <img
+              <h1
                 class="banner-text animate__animated animate__slower animate__fadeIn"
-                src="../../assets/banner-text.svg"
-                alt="Hi I'm Maria, I design and build digital products for the ideal user experience."
-              />
+              >
+                Hi, I'm Maria.<br />
+                I build <span class="main-color">Design Systems</span> that
+                scale and make them <span class="main-color">AI-ready</span>.
+              </h1>
               <a href="#contact-me">
                 <button
                   class="button-special button--wayra button--border-thick button--size-l animate__animated animate__slower animate__fadeIn"
                 >
-                  Let's Get In Touch!
+                  Let's Connect
                 </button>
               </a>
             </div>
@@ -27,7 +29,7 @@
                 <div
                   class="custom-tile developer animate__animated animate__fadeInLeft"
                 >
-                  <div>developer</div>
+                  <div>frontend</div>
                 </div>
                 <div
                   class="custom-tile projects animate__animated animate__fadeInRight"
@@ -50,14 +52,14 @@
                     </svg>
                   </div>
                   <div>
-                    <div class="custom-number">20+</div>
-                    <strong>projects</strong>
+                    <div class="custom-number">15+</div>
+                    <strong>components</strong>
                   </div>
                 </div>
                 <div
                   class="custom-tile designer animate__animated animate__fadeInRight"
                 >
-                  <div>designer</div>
+                  <div>design systems</div>
                 </div>
 
                 <img
@@ -75,25 +77,25 @@
         >
           <div class="column">
             <div class="banner-service-item">
-              <div class="wrapper">📱</div>
-              <h1 class="banner-service-title">
-                Websites supported in all devices
-              </h1>
-            </div>
-          </div>
-          <div class="column">
-            <div class="banner-service-item">
-              <div class="wrapper">🛠️</div>
+              <div class="wrapper">🧩</div>
               <h2 class="banner-service-title">
-                Content Management Systems support
+                Design Systems & Web Components
               </h2>
             </div>
           </div>
           <div class="column">
             <div class="banner-service-item">
-              <div class="wrapper">🚀</div>
+              <div class="wrapper">🤖</div>
               <h2 class="banner-service-title">
-                Search Engine Optimization and Performance
+                AI Agents & Agentic Workflows
+              </h2>
+            </div>
+          </div>
+          <div class="column">
+            <div class="banner-service-item">
+              <div class="wrapper">🧪</div>
+              <h2 class="banner-service-title">
+                Testing, Evals & Developer Experience
               </h2>
             </div>
           </div>
@@ -109,7 +111,12 @@ section {
 }
 
 .banner-text {
-  margin-bottom: 3rem;
+  font-family: "Hind Siliguri Bold", sans-serif;
+  font-size: 46px;
+  line-height: 1.2;
+  color: #292830;
+  max-width: 560px;
+  margin: 0 0 3rem 0;
 }
 
 .main-banner {
@@ -274,11 +281,15 @@ section {
     }
     &.projects {
       top: 8% !important;
-      left: 60% !important;
+      left: 52% !important;
+      max-width: 130px;
+      white-space: normal;
     }
     &.designer {
       top: 54% !important;
-      left: 77% !important;
+      left: 70% !important;
+      max-width: 110px;
+      white-space: normal;
     }
   }
   .custom-number {
@@ -291,6 +302,10 @@ section {
   .subtitle,
   .title {
     font-size: 38px;
+  }
+  .banner-text {
+    font-size: 32px;
+    max-width: 100%;
   }
   .banner-image {
     margin-top: 0;
