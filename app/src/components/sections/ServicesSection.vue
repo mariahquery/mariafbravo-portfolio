@@ -4,42 +4,42 @@ import Card from "../Card.vue";
 const serviceRows = [
   [
     {
-      title: "Website Development",
+      title: "Design Systems & Web Components",
       description:
-        "Simple or tailormade websites using top notch modern web technologies like Vue.js, Typescript, Vite and Vuex.",
-      emoji: "👩🏼‍💻",
+        "Building scalable, accessible Web Components with Lit, TypeScript and SCSS, with 15+ components adopted across 28+ products.",
+      emoji: "🧩",
     },
     {
-      title: "Responsive Web Design",
+      title: "Framework Integrations",
       description:
-        "Websites are specially designs to look great on all devices and screen sizes such as desktops, tablets, and smartphones.",
-      emoji: "📱",
+        "Making design system components work seamlessly in Vue, so adopter teams can move fast independently.",
+      emoji: "🔗",
     },
     {
-      title: "User Experience and Interface Design",
+      title: "AI Agent Instructions & Skills",
       description:
-        "Intuitive and user-friendly interfaces to improve your website's user experience. The user is the center by studying its goals and pain points.",
-      emoji: "⚙️",
+        "Authoring AI agent instructions, guardrails and reusable AI Skills that let teams integrate the design system on their own, reducing direct support.",
+      emoji: "🤖",
     },
   ],
   [
     {
-      title: "Content Management Systems Solutions",
+      title: "Agentic Testing & Evals",
       description:
-        "Manage the content of your website automnously with a user-friendly interface supported by Webflow.",
-      emoji: "🛠️",
+        "Building agentic unit-test generation loops and Promptfoo evals in CI/CD to safeguard quality on every release.",
+      emoji: "🧪",
     },
     {
-      title: "Search Engine Optimization",
+      title: "Documentation & Developer Experience",
       description:
-        "The code of your website is specially prepared to improve visibility in order to get on top of the search engines ranking.",
-      emoji: "🎯",
+        "Interactive documentation with live, copy-ready examples, plus contributions to the Design Tokens and theming system.",
+      emoji: "📚",
     },
     {
-      title: "Performance Optimization",
+      title: "Design-to-Code",
       description:
-        "All kind of assets on your website will be optimized for speed and performance to provide a better user experience.",
-      emoji: "🚀",
+        "A design background that means components aren't just built to spec. They're built to actually work for the people using them.",
+      emoji: "🎨",
     },
   ],
 ];
@@ -49,7 +49,7 @@ const serviceRows = [
   <section id="services">
     <div class="container">
       <div class="column">
-        <h4 class="title">Services</h4>
+        <h4 class="title">Focus Areas</h4>
       </div>
 
       <div v-for="(row, rowIndex) in serviceRows" :key="rowIndex" class="columns">

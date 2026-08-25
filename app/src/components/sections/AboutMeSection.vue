@@ -8,10 +8,9 @@
           >
         </h3>
         <p class="description">
-          Hello, my name is Maria and I'm a passionate front end developer with
-          design skills with over 8 years experience. I love creating stuff for web and giving life to digital user experiences!
-          <br><br> 
-          I design and develop products from end to end, from the initial design draft to the last character of code.
+          Hello, my name is Maria and I'm a Senior Frontend Developer specialized in Design Systems, with over 10 years of experience across design and code.
+          <br><br>
+          I build scalable, accessible Web Components with Lit and TypeScript, and help teams adopt them independently in Vue, increasingly through AI agents and agentic workflows, from agent instructions and guardrails to automated evals and test generation.
         </p>
       </div>
     </div>

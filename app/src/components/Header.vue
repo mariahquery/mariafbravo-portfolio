@@ -3,7 +3,7 @@ import { ref } from "vue";
 
 const menuItems = ref([
   { name: "About me", link: "#about-me" },
-  { name: "Services", link: "#services" },
+  { name: "Focus Areas", link: "#services" },
   { name: "Portfolio", link: "#portfolio" },
   { name: "Technologies", link: "#technologies" },
   { name: "Contact me", link: "#contact-me" },

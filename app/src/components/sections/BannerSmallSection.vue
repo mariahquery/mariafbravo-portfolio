@@ -5,14 +5,14 @@
         <div class="column">
           <div class="wrapper">
             <h6 class="banner-title">
-              Need a brand new website?<br />
-              <span class="main-color">Let’s start a project together.</span>
+              Working on Design Systems or AI-ready frontend tooling?<br />
+              <span class="main-color">Let’s talk.</span>
             </h6>
             <a href="#contact-me">
               <button
                 class="button-special button--wayra button--border-thick button--size-l"
               >
-                Send me a message!
+                Get in touch
               </button>
             </a>
           </div>
